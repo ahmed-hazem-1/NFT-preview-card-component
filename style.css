@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: hsl(217, 54%, 11%);
+    font-family: "Outfit", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-weight: 400;
+}
+.main{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-width: 250px;
+    max-width: 300px;
+    margin: 0px auto;
+    max-height:600px ;
+    background-color: hsl(216, 50%, 16%);
+    border-radius: 15px;
+    padding: 25px;
+    box-shadow: 10px 10px 20px 10px hsl(215, 49%, 8%);
+
+}
+.main:hover{
+    box-shadow: 0px 0px 0px 0px hsl(0, 0%, 0%);
+    transition: all 0.3s;
+
+}
+.pic{
+    background-image: url(./images/image-equilibrium.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    min-height: 300px;
+    height: 100%;   
+    width: 100%;
+    border-radius: 15px;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.pic:hover{
+    background: url(./images/icon-view.svg),url(./images/image-equilibrium.jpg);
+    background-repeat: no-repeat, no-repeat;
+    background-position: center, center;
+    background-size: 20%, cover;
+    cursor: pointer;    
+    .color{
+        opacity: 0.5;
+        z-index: 1234;
+    }
+   
+}
+.pic .color{
+    background-color: hsl(178, 100%, 50%);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    min-height: 300px;
+    border-radius: 15px;
+    opacity: 0;
+    z-index: -1234;
+}
+.text {
+    color: hsl(0, 0%, 100%);
+    font-size: 18px;
+    font-weight: 300;
+    margin-bottom: 20px;
+    
+
+}
+.title{
+    color: hsl(0, 0%, 100%);
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin: 10px 0;
+    transition: all 0.3s;
+
+}
+.title:hover{
+    color: hsl(178, 100%, 50%);
+    cursor: pointer;    
+}
+.descrption{
+    color: hsl(0, 0%, 100%);
+    font-weight: 400;
+    margin: 10px 0;
+    color: hsl(215, 32%, 27%);
+    font-size: 18px;
+    margin: 20px 0;
+
+}
+.midle{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: 600;
+    width: 100%;
+    margin: 10px 0;
+   
+}
+.midle .midle1{
+    color: hsl(178, 100%, 50%);
+    
+}
+.midle .midle1 img{
+    margin-right: 5px;
+}
+.midle .midle2{
+    color: hsl(215, 32%, 27%);
+}
+.creator hr{
+    width: 100%;
+    margin: 20px 0;
+    border: 1px solid hsl(215, 32%, 27%);
+
+}
+.creator img{
+    width: 10%;
+    height: 10%;
+    border-radius: 50%;
+    margin-right: 10px;
+    border: 2px solid hsl(0, 0%, 100%);
+
+}
+.creator{
+    color: hsl(215, 28%, 28%);
+    font-weight: 600;
+}
+.creator .name:hover{
+    color: hsl(178, 100%, 50%);
+    cursor: pointer;
+    transition: all 0.3s;
+    
+}
+.attribution {
+     font-size: 11px;
+      text-align: center;
+    position: absolute;
+    bottom: 20px;
+    margin: 10 auto;
+    width: 100%;
+    color: hsl(0, 0%, 100%);
+   
+    }
+.attribution a { color:hsl(178, 100%, 50%);
+    text-decoration: none;
+}
